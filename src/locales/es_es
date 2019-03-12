@@ -1,65 +1,64 @@
-
 export default {
   promptLabels: {
-    actionRemove:       'Are you sure you want to remove this event?',
-    actionExclude:      'Are you sure you want to remove this event occurrence?',
-    actionCancel:       'Are you sure you want to cancel this event?',
-    actionUncancel:     'Are you sure you want to uncancel this event?',
-    actionSetStart:     'Are you sure you want to set this occurrence as the first?',
-    actionSetEnd:       'Are you sure you want to set this occurrence as the last?',
-    actionMove:         'Are you sure you want to move this event?',
-    actionInclude:      'Are you sure you want to add an event occurrence?',
-    move:               'Are you sure you want to move this event?',
-    toggleAllDay:       'Are you sure you want to change whether this event occurs all day?',
-    removeExistingTime: 'Are you sure you want to remove all event occurrences at this time?'
+    actionRemove:       '¿Está seguro que quiere eliminar este evento?',
+    actionExclude:      '¿Está seguro que quiere eliminar esta ocurrencia del evento?',
+    actionCancel:       '¿Está seguro que quiere cancelar este evento?',
+    actionUncancel:     '¿Está seguro que quiere anular la cancelación de este evento?',
+    actionSetStart:     '¿Está seguro que quiere definir esta ocurrencia como la primera?',
+    actionSetEnd:       '¿Está seguro que quiere definir esta ocurrencia como la última?',
+    actionMove:         '¿Está seguro que quiere mover este evento?',
+    actionInclude:      '¿Está seguro que quiere agregar una ocurrencia del evento?',
+    move:               '¿Está seguro que quiere mover este evento?',
+    toggleAllDay:       '¿Está seguro que quiere cambiar la duración de este evento a Todo el Día?',
+    removeExistingTime: '¿Está seguro que quiere eliminar todas las ocurrencias en este momento?'
   },
   placeholder: {
-    noTitle: '(no title)'
+    noTitle: '(Sin Título)'
   },
   patterns: {
-    lastDay:        (day) => 'Last day of the month',
-    lastDayOfMonth: (day) => 'Last day of ' + day.format('MMMM'),
-    lastWeekday:    (day) => 'Last ' + day.format('dddd') + ' in ' + day.format('MMMM')
+    lastDay:        (day) => 'Último día del Mes',
+    lastDayOfMonth: (day) => 'Último día de ' + day.format('MMMM'),
+    lastWeekday:    (day) => 'Último ' + day.format('dddd') + ' de ' + day.format('MMMM')
   },
   colors: [
-    { text: 'Red' },
-    { text: 'Pink' },
-    { text: 'Purple' },
-    { text: 'Deep Purple' },
-    { text: 'Indigo' },
-    { text: 'Blue' },
-    { text: 'Glue' },
-    { text: 'Light Blue' },
+    { text: 'Rojo' },
+    { text: 'Rosado' },
+    { text: 'Púrpura' },
+    { text: 'Púrpura Oscuro' },
+    { text: 'Índigo' },
+    { text: 'Azul Oscuro' },
+    { text: 'Azul' },
+    { text: 'Azul Claro' },
     { text: 'Cyan' },
-    { text: 'Teal' },
-    { text: 'Green' },
-    { text: 'Light Green' },
-    { text: 'Lime' },
-    { text: 'Yellow' },
-    { text: 'Amber' },
-    { text: 'Orange' },
-    { text: 'Deep Orange' },
-    { text: 'Brown' },
-    { text: 'Blue Gray' },
-    { text: 'Gray' },
-    { text: 'Black' }
+    { text: 'Verde Azulado' },
+    { text: 'Verde' },
+    { text: 'Verde Claro' },
+    { text: 'Lima' },
+    { text: 'Amarillo' },
+    { text: 'Ambar' },
+    { text: 'Naranja' },
+    { text: 'Naranja Oscuro' },
+    { text: 'Café' },
+    { text: 'Gris Azulado' },
+    { text: 'Gris' },
+    { text: 'Negro' }
   ],
   icons: [
-    { text: 'Alarm' },
-    { text: 'Star' },
-    { text: 'Love' },
-    { text: 'Action' },
-    { text: 'Assignment' },
-    { text: 'Warning' },
-    { text: 'Money' },
-    { text: 'Charge' },
-    { text: 'Home' },
-    { text: 'Play' },
+    { text: 'Alarma' },
+    { text: 'Estrella' },
+    { text: 'Corazón' },
+    { text: 'Accion' },
+    { text: 'Tarea' },
+    { text: 'Advertencia' },
+    { text: 'Dinero' },
+    { text: 'Carga' },
+    { text: 'Inicio' },
+    { text: 'Reproducir' },
     { text: 'Email' },
-    { text: 'Phone' },
-    { text: 'Chart' },
-    { text: 'Biking' },
-    { text: 'Travel' }
+    { text: 'Teléfono' },
+    { text: 'Gráfica' },
+    { text: 'Ciclismo' },
+    { text: 'Viaje' }
   ],
   defaults: {
     dsDay: {
@@ -69,28 +68,28 @@ export default {
     },
     dsCalendarApp: {
       types: [
-        { label: 'Day' },
-        { label: 'Week' },
-        { label: 'Month' },
-        { label: 'Year' },
-        { label: 'Schedule' },
-        { label: '4 days' }
+        { label: 'Día' },
+        { label: 'Semana' },
+        { label: 'Mes' },
+        { label: 'Año' },
+        { label: 'Horario' },
+        { label: '4 días' }
       ],
       formats: {
         today: 'dddd, MMMM D',
         xs: 'MMM'
       },
       labels: {
-        next: (type) => type ? 'Next ' + type.label.toLowerCase() : 'Next',
-        prev: (type) => type ? 'Previous ' + type.label.toLowerCase() : 'Previous',
-        moveCancel: 'Cancel move',
-        moveSingleEvent: 'Move event',
-        moveOccurrence: 'Move just this event occurrence',
-        moveAll: 'Move all event occurrences',
-        moveDuplicate: 'Add event occurrence',
-        promptConfirm: 'Yes',
+        next: (type) => type ? 'Siguiente ' + type.label.toLowerCase() : 'Siguiente',
+        prev: (type) => type ? 'Anterior ' + type.label.toLowerCase() : 'Anterior',
+        moveCancel: 'Cancelar movimiento',
+        moveSingleEvent: 'Mover evento',
+        moveOccurrence: 'Mover solo esta ocurrencia del evento',
+        moveAll: 'Mover todas las ocurrencias del evento',
+        moveDuplicate: 'Agregar ocurrencia del evento',
+        promptConfirm: 'Si',
         promptCancel: 'No',
-        today: 'TODAY'
+        today: 'HOY'
       }
     },
     dsAgendaEvent: {
@@ -101,21 +100,21 @@ export default {
         time:       'h:mm a'
       },
       labels: {
-        allDay:   'All day',
-        options:  'Options',
-        close:    'Close',
-        day:      ['day', 'days'],
-        days:     ['day', 'days'],
-        minute:   ['minute', 'minutes'],
-        minutes:  ['minute', 'minutes'],
-        hour:     ['hour', 'hours'],
-        hours:    ['hour', 'hours'],
-        week:     ['week', 'weeks'],
-        weeks:    ['week', 'weeks'],
-        second:   ['second', 'seconds'],
-        seconds:  ['second', 'seconds'],
-        busy:     'Busy',
-        free:     'Free'
+        allDay:   'Todo el día',
+        options:  'Opciones',
+        close:    'Cerrar',
+        day:      ['día', 'días'],
+        days:     ['día', 'días'],
+        minute:   ['minuto', 'minutos'],
+        minutes:  ['minuto', 'minutos'],
+        hour:     ['hora', 'horas'],
+        hours:    ['hora', 'horas'],
+        week:     ['semana', 'semanas'],
+        weeks:    ['semana', 'semanas'],
+        second:   ['segundo', 'segundos'],
+        seconds:  ['segundo', 'segundos'],
+        busy:     'Ocupado',
+        free:     'Libre'
       }
     },
     dsCalendarEventChip: {
@@ -130,21 +129,21 @@ export default {
         time:     'h:mm a'
       },
       labels: {
-        allDay:   'All day',
-        options:  'Options',
-        close:    'Close',
-        day:      ['day', 'days'],
-        days:     ['day', 'days'],
-        minute:   ['minute', 'minutes'],
-        minutes:  ['minute', 'minutes'],
-        hour:     ['hour', 'hours'],
-        hours:    ['hour', 'hours'],
-        week:     ['week', 'weeks'],
-        weeks:    ['week', 'weeks'],
-        second:   ['second', 'seconds'],
-        seconds:  ['second', 'seconds'],
-        busy:     'Busy',
-        free:     'Free'
+        allDay:   'Todo el día',
+        options:  'Opciones',
+        close:    'Cerrar',
+        day:      ['día', 'días'],
+        days:     ['día', 'días'],
+        minute:   ['minuto', 'minutos'],
+        minutes:  ['minuto', 'minutos'],
+        hour:     ['hora', 'horas'],
+        hours:    ['hora', 'horas'],
+        week:     ['semana', 'semanas'],
+        weeks:    ['semana', 'semanas'],
+        second:   ['segundo', 'segundos'],
+        seconds:  ['segundo', 'segundos'],
+        busy:     'Ocupado',
+        free:     'Libre'
       }
     },
     dsCalendarEventCreatePopover: {
@@ -153,174 +152,174 @@ export default {
         time:     'h:mm a'
       },
       labels: {
-        title:    'Add title',
-        allDay:   'All day',
-        close:    'Close',
-        save:     'Save',
-        day:      ['day', 'days'],
-        days:     ['day', 'days'],
-        minute:   ['minute', 'minutes'],
-        minutes:  ['minute', 'minutes'],
-        hour:     ['hour', 'hours'],
-        hours:    ['hour', 'hours'],
-        week:     ['week', 'weeks'],
-        weeks:    ['week', 'weeks'],
-        second:   ['second', 'seconds'],
-        seconds:  ['second', 'seconds'],
-        busy:     'Busy',
-        free:     'Free',
-        location: 'Add location',
-        description: 'Add description',
-        calendar: 'Calendar',
+        title:    'Agregar Título',
+        allDay:   'Todo el día',
+        close:    'Cerrar',
+        save:     'Guardar',
+        day:      ['día', 'días'],
+        days:     ['día', 'días'],
+        minute:   ['minuto', 'minutos'],
+        minutes:  ['minuto', 'minutos'],
+        hour:     ['hora', 'horas'],
+        hours:    ['hora', 'horas'],
+        week:     ['semana', 'semanas'],
+        weeks:    ['semana', 'semanas'],
+        second:   ['segundo', 'segundos'],
+        seconds:  ['segundo', 'segundos'],
+        busy:     'Ocupado',
+        free:     'Libre',
+        location: 'Agregar Ubicación',
+        description: 'Agregar Descripción',
+        calendar: 'Calendario',
       },
       busyOptions: [
-        {text: 'Busy'},
-        {text: 'Free'}
+        {text: 'Ocupado'},
+        {text: 'Libre'}
       ]
     },
     dsSchedule: {
       labels: {
-        editCustom:   'Edit'
+        editCustom:   'Editar'
       }
     },
     dsEvent: {
       labels: {
-        moreActions:  'More actions...',
-        cancel:       'Cancel event changes',
-        save:         'Save',
-        title:        'Title',
-        exclusions:   'These are events or spans of time where a normally occurring event was excluded from the schedule. Events are excluded here if an event occurrence is moved.',
-        inclusions:   'These are events or spans of time where events were added outside the normally occurring schedule. Events are added here if an event occurrence is moved.',
-        cancelled:    'These are events or spans of time where events were cancelled.',
-        edit:         'Edit event',
-        add:          'Add event',
-        location:     'Add location',
-        description:  'Add description',
-        calendar:     'Calendar',
+        moreActions:  'Más acciones...',
+        cancel:       'Cancelar cambios del evento',
+        save:         'Guardar',
+        title:        'Título',
+        exclusions:   'Estos son eventos o periodos de tiempo donde un evento que ocurre normalmente fue excluido de la programación. Los eventos son excluidos aquí si se mueve una ocurrencia de evento.',
+        inclusions:   'Estos son eventos o periodos de tiempo donde se agregaron eventos fuera de la programación habitual. Los eventos son agregados aquí si se mueve una ocurrencia de evento.',
+        cancelled:    'Estos son eventos o periodos de tiempo donde otros eventos fueron cancelados.',
+        edit:         'Editar evento',
+        add:          'Agregar evento',
+        location:     'Agregar ubicación',
+        description:  'Agregar descripción',
+        calendar:     'Calendario',
         tabs: {
-          details:    'Event Details',
-          forecast:   'Forecast',
-          removed:    'Removed',
-          added:      'Added',
-          cancelled:  'Cancelled'
+          details:    'Detalles del Evento',
+          forecast:   'Pronóstico',
+          removed:    'Eliminado',
+          added:      'Agregado',
+          cancelled:  'Cancelado'
         }
       },
       busyOptions: [
-        {text: 'Busy'},
-        {text: 'Free'}
+        {text: 'Ocupado'},
+        {text: 'Libre'}
       ]
     },
     dsScheduleActions: {
       labels: {
-        remove:     'Remove this event',
-        exclude:    'Remove this occurrence',
-        cancel:     'Cancel this occurrence',
-        uncancel:   'Undo cancellation',
-        move:       'Move this occurrence',
-        include:    'Add new occurrence',
-        setStart:   'Set as first occurrence',
-        setEnd:     'Set as last occurrence',
-        pickerOk:   'OK',
-        pickerCancel:'Cancel'
+        remove:     'Eliminar este evento',
+        exclude:    'Eliminar esta occurrencia',
+        cancel:     'Cancelar esta occurrencia',
+        uncancel:   'Anular cancelación',
+        move:       'Mover esta occurrencia',
+        include:    'Agregar nueva ocurrencia',
+        setStart:   'Definir como primer ocurrencia',
+        setEnd:     'Definir como última ocurrencia',
+        pickerOk:   'De Acuerdo',
+        pickerCancel:'Cancelar'
       }
     },
     dsScheduleForecast: {
       labels: {
-        prefix:     'The forecast shows previous & next',
-        suffix:     'event occurrences within a years time.'
+        prefix:     'El pronóstico muestra anterior y siguiente',
+        suffix:     'ocurrencias de evento dentro de un año.'
       }
     },
     dsScheduleFrequencyDay: {
       labels: {
-        type: 'Days'
+        type: 'Días'
       },
       options: [
-        { text: 'Any day' },
+        { text: 'Cualquier día' },
         { text: 'On the following days...' },
         { text: 'Every _ days starting on _' }
       ],
       types: [
         { text: 'Day of the month' },
-        { text: 'Last day of the month' },
+        { text: 'Último día del Mes' },
         { text: 'Day of the year' }
       ]
     },
     dsScheduleFrequencyDayOfWeek: {
-      weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
       labels: {
-        type: 'Days of week'
+        type: 'Días de la semana'
       },
       options: [
-        { text: 'Any day of the week' },
-        { text: 'On the following days of the week...' },
-        { text: 'Every _ weekday starting on _' },
-        { text: 'Weekends' },
-        { text: 'Weekdays' }
+        { text: 'Cualquier día de la semana' },
+        { text: 'En los próximos días de la semana...' },
+        { text: 'Cada _ días de la semana empezando en _' },
+        { text: 'Fines de semana' },
+        { text: 'Días de la semana' }
       ]
     },
     dsScheduleFrequencyMonth: {
       labels: {
-        type: 'Months'
+        type: 'Meses'
       },
       months: [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December'
+        'Enero',
+        'Febrero',
+        'Marzo',
+        'Abril',
+        'Mayo',
+        'Junio',
+        'Julio',
+        'Agosto',
+        'Septiembre',
+        'Octubre',
+        'Noviembre',
+        'Diciembre'
       ],
       options: [
-        { text: 'Any month' },
-        { text: 'On the following months...' },
-        { text: 'Every _ months starting on _' }
+        { text: 'Cualquier mes' },
+        { text: 'En los próximos meses...' },
+        { text: 'Cada _ meses empezando en _' }
       ]
     },
 
     dsScheduleFrequencyWeek: {
       labels: {
-        type: 'Weeks'
+        type: 'Semanas'
       },
       options: [
-        { text: 'Any week' },
-        { text: 'On the following weeks...' },
-        { text: 'Every _ weeks starting on _' }
+        { text: 'Cualquier semana' },
+        { text: 'En las próximas semanas...' },
+        { text: 'Cada _ semanas empezando en _' }
       ],
       types: [
-        { text: 'Week of the month (first week has a Thursday)' },
-        { text: 'Weekspan of the month (starts on first day of month)' },
-        { text: 'Full week of the month (0th = the week before if any)' },
-        { text: 'Last weekspan of the month (starts on last day of month)' },
-        { text: 'Last full week of the month (0th = the week after if any)' },
-        { text: 'Week of the year (first week has a Thursday)' },
-        { text: 'Weekspan of the year (starts on first day of year)' },
-        { text: 'Full week of the year (0th = the week before if any)' },
-        { text: 'Last weekspan of the year (starts on last day of year)' },
-        { text: 'Last full week of the year (0th = the week after if any)' }
+        { text: 'Semana del mes (primer semana tiene un Jueves)' },
+        { text: 'Período de semana del mes (comienza el primer día del mes)' },
+        { text: 'Semana completa del mes (0° = la semana anterior si la hubiera)' },
+        { text: 'Último intervalo de semana del mes (comienza el último día del mes)' },
+        { text: 'La última semana completa del mes (0° = la semana anterior si la hubiera)' },
+        { text: 'Semana del año (primer semana tiene un Jueves)' },
+        { text: 'Intervalo de semana del año (comienza el primer día del año)' },
+        { text: 'Semana completa del año (0th = the week before if any)' },
+        { text: 'Último intervalo de semana del año (comienza el último día del año)' },
+        { text: 'Última semana completa del año (0° = la semana anterior si la hubiera)' }
       ]
     },
 
     dsScheduleFrequencyYear: {
       labels: {
-        type: 'Years'
+        type: 'Años'
       },
       options: [
-        { text: 'Any year' },
-        { text: 'On the following years...' },
-        { text: 'Every _ years starting on _' }
+        { text: 'Cualquier año' },
+        { text: 'En los próximos años...' },
+        { text: 'Cada _ años empezando en _' }
       ]
     },
 
     dsScheduleSpan: {
       labels: {
-        startless:  'Beginning of Time',
-        endless:    'End of Time'
+        startless:  'Principio de los tiempos',
+        endless:    'Fin de los tiempos'
       },
       formats: {
         start:      'MMMM Do, YYYY',
@@ -330,26 +329,26 @@ export default {
 
     dsScheduleTime: {
       labels: {
-        remove:     'Remove time',
-        add:        'Add time'
+        remove:     'Eliminar Hora',
+        add:        'Agregar Hora'
       }
     },
 
     dsScheduleTimes: {
       labels: {
-        all:        'All day',
-        minute:     'minute',
-        minutes:    'minutes',
-        hour:       'hour',
-        hours:      'hours',
-        day:        'day',
-        days:       'days',
-        week:       'week',
-        weeks:      'weeks',
-        month:      'month',
-        months:     'months',
-        second:     'second',
-        seconds:    'seconds'
+        all:        'Todo el día',
+        minute:     'minuto',
+        minutes:    'minutos',
+        hour:       'hora',
+        hours:      'horas',
+        day:        'día',
+        days:       'días',
+        week:       'semana',
+        weeks:      'semanas',
+        month:      'mes',
+        months:     'meses',
+        second:     'segundo',
+        seconds:    'segundos'
       }
     },
 
@@ -361,8 +360,8 @@ export default {
 
     dsScheduleTypeCustomDialog: {
       labels: {
-        save:     'Save',
-        cancel:   'Cancel'
+        save:     'Guardar',
+        cancel:   'Cancelar'
       }
     },
 
@@ -373,7 +372,7 @@ export default {
     },
 
     dsWeeksView: {
-      weekdays: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
+      weekdays: ['Dom', 'Lun', 'Mar', 'Mie', 'Jue', 'Vie', 'Sab']
     },
 
     dsDaysView: {
@@ -384,10 +383,10 @@ export default {
     },
 
     dsDayPicker: {
-      weekdays: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
+      weekdays: ['Domingo', 'Lunes', 'Martes', 'Miércoles', 'Jueves', 'Viernes', 'Sábado'],
       labels: {
-        prevMonth: 'Previous month',
-        nextMonth: 'Next month'
+        prevMonth: 'Mes Anterior',
+        nextMonth: 'Mes Siguiente'
       }
     }
   }
