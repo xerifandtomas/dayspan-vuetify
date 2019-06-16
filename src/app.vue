@@ -93,6 +93,7 @@ export default {
       { value: 'en', text: 'English' },
       { value: 'fr', text: 'French' },
       { value: 'nl', text: 'Dutch' },
+      { value: 'es_es', text: 'Dutch' },
       { value: 'ca', text: 'Catalan' }
     ],
     defaultEvents: [
